@@ -11,6 +11,7 @@
 
     <!-- FONT AWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
 
     <!-- Your styles should be called here -->
 
@@ -24,6 +25,41 @@
 
   <body>
     <!-- YOUR CONTENT GOES HERE -->
+    <div class="header-container">
+      <img src="img/metro3.jpg" style="width:100%;max-width:600px">
+    </div>
+
+    <h1>Is an unlimited Metrocard right for you?</h1>
+
+    <form id="commute_method">
+      <h3>How do you commute?</h3>
+      <select class="filter">
+        <option value="item">Filter...</option>
+        <option value="Bicycle">Bicycle</option>
+        <option value="Bus">Bus</option>
+        <option value="PersonalCar">Personal Car</option>
+        <option value="Rideshare">Rideshare</option>
+        <option value="Train">Train</option>
+        <option value="Walk">Walk</option>
+      </select>
+    </form>
+
+    <form id="commute_input">
+      <h3>How many bus and subway rides do you take per week?</h3>
+      <p>Bus (max 20):
+        <input type="number" class="rides_on_bus" max="20" /></p>
+      <p>Subway (max 20):
+        <input type="number" class="rides_on_subway" max="20" /></p>
+    </form>
+
+    <form id="commute_length">
+      <h3>How long does your commute take?</h3>
+      <input type="radio" value="15 minutes">15 minutes</input>
+      <input type="radio" value="16-30 minutes">16-30 minutes</input>
+      <input type="radio" value="31-45 minutes">31-45 minutes</input>
+      <input type="radio" value="46 minutes-1">46-60 minutes</input>
+      <input type="radio" value="More than an hour">More than an hour</input>
+    </form>
 
     <!-- the jQuery library. You need this to be able to use jQuery ($) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
